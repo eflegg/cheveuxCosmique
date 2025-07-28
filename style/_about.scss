@@ -1,0 +1,43 @@
+main {
+    position: relative;
+    .background-crystal {
+        position: absolute;
+        bottom: -10%;
+        left: 0;
+        height: 90%;
+      
+    }
+}
+
+
+
+.meet-melanie {
+    display: flex;
+    flex-direction: column;
+    @include media(md){
+        flex-direction: row;
+    }
+    .left {
+        @include media(md){
+    
+            margin-right: 2rem;
+        }
+    }
+    .right {
+        @include media(md){
+            width: 60%;
+        }
+    }
+    h2 {
+       
+        color: $darkMagenta;
+        position: sticky;
+        top: 25%;
+        margin-bottom: 2rem;
+        @include media(md){
+            text-align: right;
+            margin-bottom: 0;
+        }
+      
+    }
+}
