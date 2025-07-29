@@ -8,7 +8,7 @@
  console.log('ajax filter: ', ajaxFilter);
  const cardContainer = document.querySelector( '.card-container' )
  
- const selectElem = ajaxFilter.querySelectorAll('.cat-list_item');
+//  const selectElem = ajaxFilter.querySelectorAll('.cat-list_item');
 
  selectElem.forEach(function(radio){
     const postType = radio.getAttribute('data-type');

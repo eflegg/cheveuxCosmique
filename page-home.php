@@ -23,7 +23,7 @@ $careBg = 'https://picsum.photos/800/500';
 ?>
 <?php
 //get field
-$crystal = 'https://picsum.photos/800/500';
+$crystal = 'http://localhost:10038/wp-content/uploads/2024/04/crystal-2.svg';
 ?>
 
 
@@ -168,3 +168,4 @@ $inspired = get_field('get_inspired_image');
 
 <?php get_footer(); ?>
 
+<!-- make all the buttons html buttons! -->

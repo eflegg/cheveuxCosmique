@@ -12,10 +12,10 @@ need the whole category because need slug and name - relationship field?
 
 -->
 
-<?php
+<!-- <?php
 $categoryList - the_field('category_selector');
 print_r($categoryList);
-?>
+?> -->
 
 
 		

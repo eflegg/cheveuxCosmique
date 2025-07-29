@@ -275,9 +275,9 @@ function checkpoints(){
   const visible = elementIsVisibleInViewport(waypoint);
   if(visible){
     waypoint.classList.add('faded-in')
-    // console.log('faded in');
+    console.log('faded in');
   } else {
-    // console.log('not visible');
+    console.log('not visible');
   }
   })
 }

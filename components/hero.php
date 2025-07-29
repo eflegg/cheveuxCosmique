@@ -26,7 +26,7 @@ $heroText = get_field('hero_text');
 
 		<div class="hero-text">
 
-			<h1>Magenta</h1>
+			<h1>Cheveux Cosmique</h1>
 			<p class="subtitle no-top"><?php echo $heroText;?></p>
 			<a href="<?php echo $shopLink;?>" class="btn">shop now</a>
 		</div>
