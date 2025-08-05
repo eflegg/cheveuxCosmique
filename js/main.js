@@ -253,12 +253,12 @@ const handleScroll = () => {
   }
 };
 
-const scrollThrottle = _.throttle(handleScroll, 100);
+const scrollThrottle = _.throttle(handleScroll,100);
 window.addEventListener("scroll", scrollThrottle);
 
 
 //Vanila waypoints
-const waypoints = document.querySelectorAll('.fade-me');
+const waypoints = document.querySelectorAll('.fade-YOU');
 
 const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
   const { top, left, bottom, right } = el.getBoundingClientRect();

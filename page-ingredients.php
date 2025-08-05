@@ -41,6 +41,7 @@ $ingredients = get_field('ingredient_selector');
         ?>
         <!-- ingredient card -->
         <li class="ingredient-card fade-me">
+        
             <?php include 'components/flexible-content/image-display.php';?>
             <h3><?php echo $title; ?></h3>
             <p><?php echo $description; ?></p>
