@@ -1,6 +1,11 @@
 
+* {
+	background-color: green!important;
+}
+
 .main-header {
 	background: $lightPeach;
+	background: green;
 	position: sticky;
 	z-index: 10;
 	&.scroll-up {

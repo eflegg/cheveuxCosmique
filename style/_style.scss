@@ -1,0 +1,59 @@
+/*
+Theme Name: Magenta
+Theme URI: http://www.fleggcreative.ca
+Author: Flegg Creative
+Author URI: http://www.fleggcreative.ca
+Description: Description
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: Flegg Creative
+Domain Path: /languages/
+Tags:
+
+*/
+
+@use "css/bootstrap";
+
+@use "template/reset";
+
+@use "template/bootstrap-mods";
+
+@use "template/mixins";
+
+@use "css/fluent";
+
+@use "theme_base/theme-mixins";
+
+@use "theme_base/colours";
+
+@use "theme_base/typography";
+
+@use "theme_base/utilities";
+
+@use "theme_base/elements";
+
+@use "theme_base/fademe";
+
+@use "theme_base/forms";
+
+@use "layout";
+
+@use "nav";
+
+@use "video";
+
+@use "about";
+
+@use "ingredients";
+
+@use "blocks";
+
+@use "home";
+
+@use "contact";
+
+@use "custom-woo";
+
+
+

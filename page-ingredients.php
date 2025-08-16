@@ -4,10 +4,12 @@
 Template Name: Ingredients Page
 */
 
+
 get_header(); ?>
 
 <?php while ( have_posts() ) : the_post();?>
 <main class="main-content">
+   
 <?php
 $defaultImage = 'http://localhost:10038/wp-content/uploads/2024/04/ingredients-page-hero.jpeg';
 $ingredientsBg = get_field('ingredients_background_image');
@@ -40,7 +42,7 @@ $ingredients = get_field('ingredient_selector');
             $image = get_field('ingredient_image', $ingredient->ID);
         ?>
         <!-- ingredient card -->
-        <li class="ingredient-card fade-me">
+        <li class="ingredient-card ">
         
             <?php include 'components/flexible-content/image-display.php';?>
             <h3><?php echo $title; ?></h3>

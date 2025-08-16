@@ -214,6 +214,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
  updatedLinkTags.forEach(el => {
   el.classList.add('fade');
+  console.log("RIGHT NOW!!");
 })
 
 
@@ -226,12 +227,14 @@ document.addEventListener("DOMContentLoaded", function() {
 let logo = document.querySelector(".main-header");
 let previousScrollPosition = 0;
 
+
 const isScrollingDown = () => {
   let goingDown = false;
   let scrollPosition = window.scrollY;
 
   if (scrollPosition > previousScrollPosition) {
     goingDown = true;
+   
   }
 
   previousScrollPosition = scrollPosition;
@@ -253,12 +256,12 @@ const handleScroll = () => {
   }
 };
 
-const scrollThrottle = _.throttle(handleScroll,100);
-window.addEventListener("scroll", scrollThrottle);
+// const scrollThrottle = throttle(handleScroll,100);
+window.addEventListener("scroll", handleScroll());
 
 
-//Vanila waypoints
-const waypoints = document.querySelectorAll('.fade-YOU');
+//Vanilla waypoints
+const waypoints = document.querySelectorAll('.fade-you');
 
 const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
   const { top, left, bottom, right } = el.getBoundingClientRect();

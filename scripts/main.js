@@ -8,7 +8,7 @@ setTimeout(function(){
     $('.home-video').addClass('hidden');
 }, 3600);
 
-$(".fade-me").waypoint(function(){
+$(".fade-you").waypoint(function(){
    $(this[0,'element']).addClass("faded-in");
 }, {
     offset: "80%"
