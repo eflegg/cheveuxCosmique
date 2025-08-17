@@ -20,7 +20,7 @@ $ingredientsIntro = get_field('ingredients_intro');
 <section style="background-image: url('<?php if(!$ingredientsBg): echo $defaultImage;  else: echo $ingredientsBg;  endif;  ?>'); background-size: cover; background-position: center;" class="section-container ingredients-hero">
     <h1><?php echo $ingredientsHeadline;?></h1>
 </section>
-
+aslfkuhjdlkjahflijkwhDF ALUWEGHSD
 <section class="section-container section-two">
     <!-- this works because only one page uses this template. otherwise there would be conflict between the excerpts on each page that uses the same template -->
     <p class="x-large-paragraph text-center fade-me"><?php echo $ingredientsIntro;?></p>

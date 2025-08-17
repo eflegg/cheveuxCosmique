@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
  updatedLinkTags.forEach(el => {
   el.classList.add('fade');
-  console.log("RIGHT NOW!!");
+  console.log("I HATE YOU");
 })
 
 
