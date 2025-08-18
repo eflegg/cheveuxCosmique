@@ -107,7 +107,7 @@ add_action( 'widgets_init', 'themename_widgets_init' );
 
 function themename_scripts() {
 
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js' );
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ) );
 	
 	wp_enqueue_script('single-filter', get_template_directory_uri() . '/js/single-filter.js');
 

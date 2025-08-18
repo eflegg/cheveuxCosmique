@@ -1,4 +1,6 @@
 
+@use "../template/mixins" as *;
+@use "../themebase" as *;
 //Page Transition
 .main-content {
     animation: fade-in 1s forwards;
@@ -45,9 +47,9 @@ main {
 	margin: 0 auto;
 	max-width: 140rem;
 
-	&.half {
+	//&.half {
 		// max-width: 56rem;
-	}
+	//}
 	position: relative;
 	padding: 3.25rem 2rem;
 	@include media(sm){
@@ -196,18 +198,18 @@ main {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
+			justify-content: space-between;
 			@include media(md){
 				flex-direction: column;
 				width: 60%;
 				margin-left: auto;
 			}
-			justify-content: space-between;
 			li {
 				width: 50%;
+				margin-bottom: 3rem;
 				@include media(md){
 					width: auto;
 				}
-				margin-bottom: 3rem;
 			}
 			a {
 				color: $charcoal;
@@ -220,7 +222,6 @@ main {
 			}
 		}
 		.footer-crystal__desktop {
-		
 			display: none;
 			visibility: hidden;
 			position: absolute;
@@ -238,7 +239,6 @@ main {
 .footer-crystal__mobile {
 	position: absolute;
 	right: 10rem;
-	
 	bottom: 0;
 	// transform: rotate(-25deg)translate(100%, -50%);
 	transform: rotate(-25deg)translateY(50%);
@@ -252,30 +252,29 @@ main {
 		visibility: hidden;
 	}
 }
-		.legal {
-			background-color: $lightPeach;
-			@include media(md){
-				background-color: $darkMagenta;
-			}
-			.legal-inner{
-			p{
-				color: $charcoal;
-			@include media(md){
-				color: $white;
-			}
-			}
-	
-			margin: 0 auto;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			height: 6.6rem;
+.legal {
+	background-color: $lightPeach;
+	@include media(md){
+		background-color: $darkMagenta;
+	}
+	.legal-inner{
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 6.6rem;
+		color: $charcoal;
+		p {
 			color: $charcoal;
-			@include media(md){
-				color: $white;
-			}
+		@include media(md){
+			color: $white;
 			}
 		}
+	@include media(md){
+		color: $white;
+	}
+	}
+}
 	}
 
 

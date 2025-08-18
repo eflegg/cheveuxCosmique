@@ -190,7 +190,7 @@
           //     return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
           // }
           function newMagentaColour() {
-            const customColours=['#D97803', '#F6E3DC', '#BBCDCF', '#963E67',, '#BF5083', '#8C4D8D'];
+            const customColours=['#D97803', '#F6E3DC', '#BBCDCF', '#963E67', '#BF5083', '#8C4D8D'];
       
             const randomColour = customColours[Math.floor(Math.random() * customColours.length)]; 
             // console.log(randomColour);
@@ -234,11 +234,9 @@ const isScrollingDown = () => {
 
   if (scrollPosition > previousScrollPosition) {
     goingDown = true;
-   
   }
 
   previousScrollPosition = scrollPosition;
-
   return goingDown;
 };
 
@@ -246,10 +244,12 @@ const handleScroll = () => {
   if (isScrollingDown()) {
     const headerHeight = logo.offsetHeight;
     console.log(headerHeight);
+    console.log("scroll going down true");
     logo.classList.add("scroll-down");
     logo.style.top = "-111px";
     logo.classList.remove("scroll-up");
   } else {
+    console.log("scroll going up true");
     logo.classList.add("scroll-up");
     logo.classList.remove("scroll-down");
       logo.style.top = "0"

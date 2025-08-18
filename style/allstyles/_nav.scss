@@ -1,11 +1,11 @@
 
-* {
-	background-color: green!important;
-}
+@use "../template/mixins" as *;
+@use "../themebase" as *;
+
 
 .main-header {
 	background: $lightPeach;
-	background: green;
+	
 	position: sticky;
 	z-index: 10;
 	&.scroll-up {
@@ -14,7 +14,7 @@
 		transition: all .25s ease-out;
 	}
 	&.scroll-down {
-		position: sticky;
+		position: relative;
 		top: 0;
 		transition: all .25s ease-in;
 	}
@@ -49,12 +49,12 @@ header {
 	z-index: 20;
 	margin: 0 auto;
 	display: block;
+	padding-top: 5%!important;
+	padding-bottom: 5%!important;
 	@include media(sm){
 		display: flex;
 		justify-content: flex-start;
 	}
-	padding-top: 5%!important;
-	padding-bottom: 5%!important;
 	@include media(md){
 		padding-top: 2%!important;
 		padding-bottom: 2%!important;
@@ -156,10 +156,10 @@ header {
 					
 					width: 85%;
 					font-size: 2.4rem;
+					margin: 1.5rem;
 					@include media(lg){
 						width: initial;
 					}
-					margin: 1.5rem;
 					a {
 						color: $darkMagenta;
 						font-weight: 500;

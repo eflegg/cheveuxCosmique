@@ -22,7 +22,7 @@
 		<header id="header" class="main-header  ">
 			<div class="header--inner section-container">
 		<a href="#main"class="skiplink no-fade">Skip to content</a>
-			<a class="fade home-logo" href=<?php echo home_url();?>>
+			<a class=" home-logo" href=<?php echo home_url();?>>
 			<?php echo get_bloginfo('name'); ?>
 			</a>
 			<nav class="js-navigation"

@@ -1,3 +1,6 @@
+@use "../template/mixins" as *;
+@use "../themebase" as *;
+
 .home-video {
 	background: $black;
     display: none;

@@ -1,4 +1,5 @@
-
+@use "../themebase/" as *;
+@use "../template/" as *;
 
 
 .custom-woo-container{
@@ -99,20 +100,17 @@
     // }
     .woocommerce-product-gallery {
         // border: 3px solid blue;
+        background:  $darkPeach;
         @include media(md){
             height: 80vh;
 
         }
-        background:  $darkPeach;
-        .woocommerce-product-gallery__image {
-            a {
-
-            }
+        //.woocommerce-product-gallery__image {
             // max-height: 100vh;
             // img {
             //     max-height: 100vh;
             // }
-        }
+        //}
         .woocommerce-product-gallery__wrapper {
             max-height: 100%;
             // border: 2px solid red;
@@ -134,8 +132,8 @@
 			}
         }
     }
-    .product_custom-fields {
-    }
+    // .product_custom-fields {
+    // }
     .full-width {
         margin-top: 5rem;
     }
@@ -291,12 +289,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @include media(md){
-flex-direction: row;
-    }
+   
     align-items: center;
     padding: 3rem;
-    @include heading();
+  
     font-size: 2.4rem;
     text-align: center;
     margin: 5rem;
@@ -312,6 +308,10 @@ flex-direction: row;
         content: "";
         color: transparent;
     }
+    @include heading();
+     @include media(md){
+        flex-direction: row;
+    }
 }
 
 //proceed to checkout button
@@ -323,25 +323,28 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
 .button, .wc-block-cart__submit-button {
     min-height: none!important;
     margin-bottom: 3rem!important;
-    @include media(md){
-        margin-bottom: 0!important;
-    }
+   
     background-color: transparent!important;
     padding: .5rem 4rem;
     border: 1px solid $darkMagenta!important;
-    @include bodyText();
+   
     text-transform: lowercase;
     color: $darkMagenta!important;
-    @include bodyText();
+   
     font-weight: 300!important;
     border-radius: 2.5rem;
     background: transparent;
     cursor: pointer;
     font-size: 2.4rem;
     transition: all .25s ease-in-out;
+     
+     @include bodyText();
     @include media(md){
         padding: 1rem 4rem;
         border-radius: 3rem!important;
+    }
+     @include media(md){
+        margin-bottom: 0!important;
     }
     &:hover {
         background-color: $darkMagenta!important;
@@ -358,24 +361,25 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
         }
     }
     &.wc-forward {
-        margin-bottom: 3rem!important;
-        @include media(md){
-            margin-bottom: 0!important;
-        }
-        background-color: transparent!important;
+          background-color: transparent!important;
         padding: .5rem 4rem;
         border: 1px solid $darkMagenta!important;
-        @include bodyText();
-        text-transform: lowercase;
+        margin-bottom: 3rem!important;
+      
+      text-transform: lowercase;
         color: $darkMagenta!important;
-        @include bodyText();
-        font-weight: 300!important;
+         font-weight: 300!important;
         border-radius: 2.5rem;
         background: transparent;
         cursor: pointer;
         font-size: 2.4rem;
         transition: all .25s ease-in-out;
+        @include bodyText();
+        
+      
+       
         @include media(md){
+               margin-bottom: 0!important;
             padding: 1rem 4rem;
             border-radius: 3rem!important;
         }

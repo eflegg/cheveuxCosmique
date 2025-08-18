@@ -1,4 +1,5 @@
-
+@use "../template/mixins" as *;
+@use "../themebase" as *;
 
 .home-hero {
     height: 89vh;

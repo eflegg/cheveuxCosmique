@@ -1,7 +1,9 @@
+@use "../template/mixins" as *;
+@use "../themebase" as *;
+
 .hero{
 	height: 80vh;
 	min-height: 63rem;
-
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -32,6 +34,10 @@
     }
     .right {
         margin-bottom: 3rem;
+		background: $lightGold;
+        @include media(lg){
+        width: 45%;
+        }
         img {
             width: 90%;
             margin: 0 auto;
@@ -44,21 +50,19 @@
                 transform: translateX(-10%);
             }
         }
-        background: $lightGold;
-        @include media(lg){
-        width: 45%;
-        }
+     
     }
 	&.reverse {
 		border: 2px solid seagreen;
 		flex-direction: column;
+		margin-bottom: 5rem;
 		@include media(lg){
 			flex-direction: row;
 			align-items: flex-end;
 		justify-content: center;
 		
 		}
-		margin-bottom: 5rem;
+		
 		figure {
 			height: 90%;
 		}

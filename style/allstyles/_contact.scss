@@ -1,3 +1,6 @@
+@use "../themebase/" as *;
+@use "../template/" as *;
+
 .contact-hero {
     height: 89vh;
     h1 {
