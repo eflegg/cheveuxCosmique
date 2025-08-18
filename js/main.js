@@ -211,13 +211,11 @@ document.addEventListener("DOMContentLoaded", function() {
  console.log('updated ', updatedLinkTags);
  const finalTags = updatedLinkTags.shift();
  console.log('final tags ', updatedLinkTags);
-
  updatedLinkTags.forEach(el => {
   el.classList.add('fade');
-  console.log("I HATE YOU");
 })
 
-//new try 
+//nav scroll 
 
 let logo = document.getElementById('header');
 let previousScrollPosition = 0;
@@ -236,16 +234,15 @@ const isScrollingDown = () => {
 };
 
 window.addEventListener('scroll', function(event) {
- const navigationBar = document.getElementById('header');
   if (isScrollingDown()) {
     const headerHeight = logo.offsetHeight;
-    console.log(headerHeight);
-    console.log("scroll going down true");
+    // console.log(headerHeight);
+    // console.log("scroll going down true");
     logo.classList.add("scroll-down");
     logo.style.top = "-111px";
     logo.classList.remove("scroll-up");
   } else {
-    console.log("scroll going up true");
+    // console.log("scroll going up true");
     logo.classList.add("scroll-up");
     logo.classList.remove("scroll-down");
       logo.style.top = "0"
@@ -254,50 +251,9 @@ window.addEventListener('scroll', function(event) {
 });
 
 
-        
-//nav scroll
-/* Code can be found in repo: https://github.com/robole/artifice
-*/
-
-// let logo = document.querySelector(".main-header");
-// let logo = document.getElementById('header');
-// let previousScrollPosition = 0;
-
-
-// const isScrollingDown = () => {
-//   let goingDown = false;
-//   let scrollPosition = window.scrollY;
-
-//   if (scrollPosition > previousScrollPosition) {
-//     goingDown = true;
-//   }
-
-//   previousScrollPosition = scrollPosition;
-//   return goingDown;
-// };
-
-// const handleScroll = (event) => {
-//   if (isScrollingDown()) {
-//     const headerHeight = logo.offsetHeight;
-//     console.log(headerHeight);
-//     console.log("scroll going down true");
-//     logo.classList.add("scroll-down");
-//     logo.style.top = "-111px";
-//     logo.classList.remove("scroll-up");
-//   } else {
-//     console.log("scroll going up true");
-//     logo.classList.add("scroll-up");
-//     logo.classList.remove("scroll-down");
-//       logo.style.top = "0"
-//   }
-// };
-
-// const scrollThrottle = throttle(handleScroll,100);
-// window.addEventListener("scroll", handleScroll(event));
-
 
 //Vanilla waypoints
-const waypoints = document.querySelectorAll('.fade-you');
+const waypoints = document.querySelectorAll('.fade-me');
 
 const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
   const { top, left, bottom, right } = el.getBoundingClientRect();
@@ -309,7 +265,8 @@ const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
     : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
 };
 
-function checkpoints(){
+
+window.addEventListener("scroll", function checkpoints(){
  waypoints.forEach(waypoint => {
   const visible = elementIsVisibleInViewport(waypoint);
   if(visible){
@@ -319,10 +276,8 @@ function checkpoints(){
     console.log('not visible');
   }
   })
-}
+});
 
-
-window.addEventListener("scroll", checkpoints);
 
 
   //better carousel
