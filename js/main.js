@@ -217,14 +217,9 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log("I HATE YOU");
 })
 
+//new try 
 
-
-        
-//nav scroll
-/* Code can be found in repo: https://github.com/robole/artifice
-*/
-
-let logo = document.querySelector(".main-header");
+let logo = document.getElementById('header');
 let previousScrollPosition = 0;
 
 
@@ -240,7 +235,8 @@ const isScrollingDown = () => {
   return goingDown;
 };
 
-const handleScroll = () => {
+window.addEventListener('scroll', function(event) {
+ const navigationBar = document.getElementById('header');
   if (isScrollingDown()) {
     const headerHeight = logo.offsetHeight;
     console.log(headerHeight);
@@ -254,10 +250,50 @@ const handleScroll = () => {
     logo.classList.remove("scroll-down");
       logo.style.top = "0"
   }
-};
+ 
+});
+
+
+        
+//nav scroll
+/* Code can be found in repo: https://github.com/robole/artifice
+*/
+
+// let logo = document.querySelector(".main-header");
+// let logo = document.getElementById('header');
+// let previousScrollPosition = 0;
+
+
+// const isScrollingDown = () => {
+//   let goingDown = false;
+//   let scrollPosition = window.scrollY;
+
+//   if (scrollPosition > previousScrollPosition) {
+//     goingDown = true;
+//   }
+
+//   previousScrollPosition = scrollPosition;
+//   return goingDown;
+// };
+
+// const handleScroll = (event) => {
+//   if (isScrollingDown()) {
+//     const headerHeight = logo.offsetHeight;
+//     console.log(headerHeight);
+//     console.log("scroll going down true");
+//     logo.classList.add("scroll-down");
+//     logo.style.top = "-111px";
+//     logo.classList.remove("scroll-up");
+//   } else {
+//     console.log("scroll going up true");
+//     logo.classList.add("scroll-up");
+//     logo.classList.remove("scroll-down");
+//       logo.style.top = "0"
+//   }
+// };
 
 // const scrollThrottle = throttle(handleScroll,100);
-window.addEventListener("scroll", handleScroll());
+// window.addEventListener("scroll", handleScroll(event));
 
 
 //Vanilla waypoints

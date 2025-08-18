@@ -19,7 +19,7 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 	<!-- <div class="site"> -->
-		<header id="header" class="main-header  ">
+		<header id="header" class="main-header" >
 			<div class="header--inner section-container">
 		<a href="#main"class="skiplink no-fade">Skip to content</a>
 			<a class=" home-logo" href=<?php echo home_url();?>>

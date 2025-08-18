@@ -3,10 +3,28 @@
 @use "../themebase" as *;
 
 
-.main-header {
+// .main-header {
+// 	background: $lightPeach;
+	
+// 	position: sticky;
+// 	top: 0;
+// 	z-index: 10;
+// 	&.scroll-up {
+// 		position: sticky;
+// 		top: 0;
+// 		transition: all .25s ease-out;
+// 	}
+// 	&.scroll-down {
+// 		position: relative;
+// 		top: 0;
+// 		transition: all .25s ease-in;
+// 	}
+// }
+#header{
 	background: $lightPeach;
 	
 	position: sticky;
+	top: 0;
 	z-index: 10;
 	&.scroll-up {
 		position: sticky;
@@ -18,6 +36,7 @@
 		top: 0;
 		transition: all .25s ease-in;
 	}
+
 }
 .skiplink{
 		position: absolute;

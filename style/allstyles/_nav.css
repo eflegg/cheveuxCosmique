@@ -30,11 +30,12 @@ p, .p {
 
 a {
   color: #4B4955;
+  font-size: 1.8rem;
+  line-height: 130%;
+  text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 1.8rem;
-  line-height: 130%;
 }
 @media screen and (min-width: 800px) {
   a {
@@ -706,17 +707,18 @@ ul {
   margin-top: 2rem;
 }
 
-.main-header {
+#header {
   background: #F6E3DC;
   position: sticky;
+  top: 0;
   z-index: 10;
 }
-.main-header.scroll-up {
+#header.scroll-up {
   position: sticky;
   top: 0;
   transition: all 0.25s ease-out;
 }
-.main-header.scroll-down {
+#header.scroll-down {
   position: relative;
   top: 0;
   transition: all 0.25s ease-in;

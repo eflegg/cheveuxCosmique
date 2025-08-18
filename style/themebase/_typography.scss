@@ -56,9 +56,10 @@ p, .p {
 }
 a {
 	color: $charcoal;
-	@include bodyText();
 	font-size: 1.8rem;
 	line-height: 130%;
+	text-decoration: none;
+	@include bodyText();
 	@include media(md){
 		font-size: 2rem;
 	}
