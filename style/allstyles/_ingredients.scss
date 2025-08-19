@@ -26,6 +26,8 @@
     align-items: center;
     figure {
         // height: 21.5rem;
+        width: 100%;
+      
         @include media(sm){
             height: 30rem;
         }
@@ -33,13 +35,14 @@
             height: 40rem;
         }
         img {
-            width: auto;
-            margin: 0 auto;
-            object-fit: contain;
+            margin: 1rem auto;
+            object-fit: cover;
         }
     }
     li {
        text-align: center;
+       margin: 2rem auto;
+ 
     }
 @include media(md){
     p {
