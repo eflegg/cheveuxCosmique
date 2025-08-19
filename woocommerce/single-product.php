@@ -78,7 +78,8 @@ get_header( 'shop' ); ?>
 
 						<?php 
 
-						$ingredients = get_field('linked_ingredients');
+						// $ingredients = get_field('linked_ingredients');
+						$ingredients = get_field('ingredient_selector_product_single');
 
 						?>
 						<?php if( $ingredients ): ?>
@@ -121,12 +122,12 @@ get_header( 'shop' ); ?>
 						if($accordion):?>
 						<?php
 						$productDetails = $accordion['product_details'];
-						$whatsNot = $accordion['what_not_in_magenta'];
+						$whatsNot = $accordion['whats_not_in_magenta'];
 						$howToUse = $accordion['how_to_use'];
 						?>
 						<ul class="accordion-list">
 							<li aria-expanded="false" class="accordion-item">
-							<button  class="item--inner display-flex justify-space-between">
+							<button  class="item--inner display-flex justify-space-between align-items-center">
 									<p>Product Details</p>
 									<figure class="icon"><img src="<?php bloginfo('template_url'); ?>/images/chevron.png" alt="chevron icon"></figure>
 								</button>

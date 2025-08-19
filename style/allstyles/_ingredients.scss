@@ -19,6 +19,9 @@
 .ingredients-grid {
     &.single-product {
         margin-bottom: 2rem;
+        .woocommerce img, .woocommerce-page img {
+            height: 100%;
+        }
     }
     padding-left: 0;
     display: flex;

@@ -1,3 +1,6 @@
+@use "../template/mixins" as *;
+@use "../themebase" as *;
+
 main {
     position: relative;
     .background-crystal {
